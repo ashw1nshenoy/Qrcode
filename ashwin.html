@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: 'Caveat', cursive;
+
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 10rem;
+        }
+        body{
+            background-color: #C5DFF8;
+        }
+        .input{
+            height: 2rem;
+            width: 15rem;
+            background-color: whitesmoke;
+            border: 0.1rem solid black;
+            border-radius: 1rem 0;
+        }
+        .submit{
+            margin-top: 1rem;
+            background-color: #99DBF5;
+            height: 2rem;
+            width: 6rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>QR CODE GENERATOR</h1>
+    <form action="/" method="POST">
+    <input type="text" name="url" class="input" placeholder="  Enter a valid URL" required><br>
+    <input class="submit"type="submit" id="submit" value="Generate">
+    </form>
+    </div>
+</body>
+</html>
