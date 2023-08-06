@@ -5,12 +5,10 @@ import fs from "fs";
 import express from "express";
 import bodyParser from "body-parser";
 const __filename = fileURLToPath(import.meta.url);
-
 const __dirname = path.dirname(__filename);
 const app=express();
 const port =3000
 app.use(bodyParser.urlencoded({extended:true}));
-
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/ashwin.html");
 })
@@ -23,4 +21,4 @@ app.post("/",function(req,res){
 })
 app.listen(port, () => {
   console.log("Server started");
-  });
+});
