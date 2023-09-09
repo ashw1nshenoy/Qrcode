@@ -1,8 +1,8 @@
+import express from "express";
 import path from 'path';
 import { fileURLToPath } from 'url';
 import qr from "qr-image";
 import fs from "fs";
-import express from "express";
 import bodyParser from "body-parser";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
